@@ -5,12 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El Blog de Henry</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header>
     <!-- LISTA UNO -->
-    <p>Setup</p>
     <nav>
+    <details open>
+      <summary>
+        Setup
+      </summary>
       <ol>
         <li>
           <a href="#google-chrome">Google Chrome</a>
@@ -25,31 +29,36 @@
           <a href="#github">GitHub</a>
           </li>
       </ol>
+    </details>
       <!-- LISTA DOS -->
-      <p>Conceptos esenciales del Desarrollo Web</p>
-      <ol>
-        <li>
-          <a href="#html">Qué es HTML</a>
-          </li>
-        <li>
-          <a href="#etiquetas">Etiquetas</a>
-          </li>
-        <li>
-          <a href="#dom">DOM</a>
-          </li>
-        <li>
-          <a href="#semantica">Semántica</a>
-          </li>
-        <li>
-          <a href="#atributos">Atributos</a>
-          </li>
-        <li>
-          <a href="#css">Qué es CSS</a>
-          </li>
-      </ol>
+      <details open>
+        <summary>
+          Conceptos esenciales del Desarrollo Web
+        </summary>
+        <ol>
+          <li>
+            <a href="#html">Qué es HTML</a>
+            </li>
+          <li>
+            <a href="#etiquetas">Etiquetas</a>
+            </li>
+          <li>
+            <a href="#dom">DOM</a>
+            </li>
+          <li>
+            <a href="#semantica">Semántica</a>
+            </li>
+          <li>
+            <a href="#atributos">Atributos</a>
+            </li>
+          <li>
+            <a href="#css">Qué es CSS</a>
+            </li>
+        </ol>
+      </details>
     </nav>
   </header>
-  <h1>
+  <h1 class="titulo">
     <!-- SECCION UN -->
   Curso esencial de HTML y CSS
 </h1>
@@ -84,6 +93,19 @@ manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
 <h3 id="html" >Qué es HTML</h3>
 <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
 y la estructura del contenido.</p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 <h2 id="etiquetas">Etiquetas</h2>
 <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
 características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -140,7 +162,10 @@ desarrollo avanzadas y de amigable uso.</p>
 </ul>
  <h2>Modelo de caja</h2>
  <img src="images/foto-leo.png" alt="Foto de Leo" title="Foto de Leo">
+<p>
+  Si tienes alguna pregunta escríbeme a
+  <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+</p>
 
- <a href="https://www.youtube.com/watch?v=H81frNS5QSc" target="_blank">videos cheveres</a>
 </body>
 </html>
